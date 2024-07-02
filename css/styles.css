@@ -1,0 +1,164 @@
+/* CSS para o arquivo styles.css */
+
+/* Estilos para o texto de atendimento */
+.atendimento-text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinha o texto à direita */
+    text-decoration: none; /* Remove sublinhado */
+    color: #555; /* Muda a cor do texto */
+    font-size: 14px;
+}
+
+/* Reduz a altura das imagens no carrossel */
+.carousel-item img {
+    height: 300px; /* Altura desejada para as imagens */
+    object-fit: cover; /* Para manter proporção e preencher o espaço */
+}
+
+/* Estilos para marcas lado a lado */
+.brands-home {
+    justify-content: flex-start;
+}
+
+.brand-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    width: 70px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.brand-link:hover {
+    transform: scale(1.1);
+}
+
+#carros-estoque {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card {
+    transition: transform 0.2s;
+    margin: 20px 0; /* Adiciona margem superior e inferior para espaçamento */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+/* Estilos customizados */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 0px; /* Ajuste do padding-top */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Espaçamento adicional entre os cards e o mapa */
+#carros-container {
+    margin-bottom: 30px; /* Adiciona margem inferior ao container dos cards */
+}
+
+/* Estilos para o formulário de contato e mapa */
+.contact-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-form-container form {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.contact-form-container iframe {
+    flex: 1;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1024px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+    .atendimento-text {
+        font-size: 12px;
+    }
+    .brand-link {
+        width: 60px;
+        margin: 8px;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form-container {
+        flex-direction: column;
+    }
+
+    .contact-form-container form {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .brand-link {
+        width: 50px;
+        margin: 6px;
+    }
+
+    .card {
+        margin: 20px 0; /* Adiciona margem superior e inferior para espaçamento */
+    }
+
+    .card-img-top {
+        height: auto; /* Ajuste automático da altura */
+        max-height: 200px; /* Limita a altura máxima */
+        object-fit: contain; /* Garante que a imagem não seja cortada */
+    }
+
+    #carros-container {
+        margin-bottom: 20px; /* Ajuste da margem inferior para resoluções menores */
+    }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site da LOJAAUTOMOTIVA. Confira nosso estoque e entre em contato conosco.">
+    <title>LOJAAUTOMOTIVA - Estoque</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+        <div class="container">
+            <div class="d-flex justify-content-end w-100">
+                <a class="atendimento-text"><p><b>Horário de atendimento:</b> Segunda a Sexta - 9h às 19h | Sábados das 08h
+                    às 16h</p></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">LOJAAUTOMOTIVA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre a Loja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">Galeria de Fotos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Marcas de Veículos -->
+    <div class="container mt-4">
+        <div class="row brands brands-home d-flex flex-wrap justify-content-start">
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=bmw">
+                <img src="https://static.autoconf.com.br/marcas/bmw.png" alt="BMW" width="40" height="40">
+                <small>BMW</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=chevrolet">
+                <img src="https://static.autoconf.com.br/marcas/gm-chevrolet.png" alt="Chevrolet" width="40"
+                    height="40">
+                <small>Chevrolet</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=citroen">
+                <img src="https://static.autoconf.com.br/marcas/citroen.png" alt="Citroën" width="40" height="40">
+                <small>Citroën</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=fiat">
+                <img src="https://static.autoconf.com.br/marcas/fiat.png" alt="Fiat" width="40" height="40">
+                <small>Fiat</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=ford">
+                <img src="https://static.autoconf.com.br/marcas/ford.png" alt="Ford" width="40" height="40">
+                <small>Ford</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=hyundai">
+                <img src="https://static.autoconf.com.br/marcas/hyundai.png" alt="Hyundai" width="40" height="40">
+                <small>Hyundai</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=jeep">
+                <img src="https://static.autoconf.com.br/marcas/jeep.png" alt="Jeep" width="40" height="40">
+                <small>Jeep</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=kia-motors">
+                <img src="https://static.autoconf.com.br/marcas/kia-motors.png" alt="Kia Motors" width="40" height="40">
+                <small>Kia Motors</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=land-rover">
+                <img src="https://static.autoconf.com.br/marcas/land-rover.png" alt="Land Rover" width="40" height="40">
+                <small>Land Rover</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=nissan">
+                <img src="https://static.autoconf.com.br/marcas/nissan.png" alt="Nissan" width="40" height="40">
+                <small>Nissan</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=porsche">
+                <img src="https://static.autoconf.com.br/marcas/porsche.png" alt="Porsche" width="40" height="40">
+                <small>Porsche</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=volkswagen">
+                <img src="https://static.autoconf.com.br/marcas/vw-volkswagen.png" alt="Volkswagen" width="40"
+                    height="40">
+                <small>Volkswagen</small>
+            </a>
+            <a class="brand-link mx-2 my-2" href="estoque.html?marca=volkswagen">
+                <img src="https://static.autoconf.com.br/marcas/renault.png" alt="Renault" width="40"
+                    height="40">
+                <small>Renault</small>
+            </a>
+        </div>
+        <p id="carros-estoque" class="mt-4"></p>
+    </div>
+
+    <!-- Main content -->
+    <div class="container mt-4" id="carros-container">
+        <div class="row" id="carros-lista">
+            <!-- Os carros serão carregados dinamicamente aqui -->
+        </div>
+    </div>
+
+    <!-- Formulário de Contato e Mapa -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Mapa -->
+            <div class="col-md-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.078070998671!2d-35.954655926795475!3d-8.295029583430066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98a56da17a4b1%3A0x88b2099670852257!2sCaruaru%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1719751075316!5m2!1spt-BR!2sbr"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- Formulário de Contato -->
+            <div class="col-md-6">
+                <h2>Envie uma mensagem</h2>
+                <form id="contactForm" action="./php/enviar-email.php" method="post">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone" pattern="[0-9]{4}-[0-9]{4}" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
